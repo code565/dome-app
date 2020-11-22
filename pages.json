@@ -1,0 +1,83 @@
+{
+	"easycom": {
+	    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+				    "titleNView": false, //禁用原生导航栏
+					"enablePullDownRefresh": "true",
+					"backgroundTextStyle": "dark" 
+				}
+			}
+		},
+		{
+			"path": "pages/home/details",
+			"style": {
+				"navigationBarTitleText": "详情页"
+			}
+		},
+		{
+			"path": "pages/taber/more",
+			"style": {
+				"navigationBarTitleText": "更多",
+				"navigationBarBackgroundColor": "#f3AA36",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/taber/find",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		},
+		{
+			"path": "pages/taber/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#c0c0c8",
+		"selectedColor": "#000000",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/homeImg/home.png",
+				"selectedIconPath": "static/homeImg/homeActive.png"
+			},
+			{
+				"pagePath": "pages/taber/more",
+				"text": "更多",
+				"iconPath": "static/homeImg/more.png",
+				"selectedIconPath": "static/homeImg/moreActive.png"
+			},
+			{
+				"pagePath": "pages/taber/find",
+				"text": "发现",
+				"iconPath": "static/homeImg/find.png",
+				"selectedIconPath": "static/homeImg/findActive.png"
+			},
+			{
+				"pagePath": "pages/taber/my",
+				"text": "我的",
+				"iconPath": "static/homeImg/my.png",
+				"selectedIconPath": "static/homeImg/myActive.png"
+			}
+		]
+	}
+	
+}
