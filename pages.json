@@ -39,6 +39,14 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
+		},
+		{
+			"path": "pages/taber/more/Index",
+			"style": {
+				"navigationBarTitleText": "推荐",
+				"navigationBarBackgroundColor": "#f3AA36",
+				"navigationBarTextStyle": "white"
+			}
 		}
 	],
 	"globalStyle": {

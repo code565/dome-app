@@ -4,10 +4,12 @@
 		<div class="more">
 			<p class="more-title">瑞祥服务</p>
 			<div class="more-toncent">
-				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
-					<span class="more-toncent-woders">我的评价</span>
-				</div>
+					<div class="more-toncent-dispeo">
+						<navigator url="./more/Index" open-type="navigate">
+						<img src="static/homeImg/more/event.png" />
+						<span class="more-toncent-woders">我的评价</span>
+						</navigator>
+					</div>
 				<div class="more-toncent-dispeo">
 					<img src="static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">帮助中心</span>
