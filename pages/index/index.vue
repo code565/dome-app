@@ -3,7 +3,6 @@
 		<!-- <uni-nav-bar left-icon="back" left-text="返回" fixed="true" right-text="菜单" title="导航栏组件" @barHeightfn="barHeightfn"></uni-nav-bar> -->
 		<div class="content-val" :style="{'margin-top': barHeightPress + 'px'}">
 			<image src="/static/homeImg/moreEnd.png" class="contentsHeaImg" /></image>
-			
 			<div class="moueHome">
 				<ul class="moueHome-ul">
 					<li>
@@ -33,11 +32,11 @@
 				</ul>
 				
 			</div>
-			
 		</div>
 		<u-toast ref="uToast" />
 	</view>
 </template>
+
 
 <script>
 	export default {
@@ -107,6 +106,7 @@
 	.moueHome-ul li image{
 		width: 150rpx;
 		height: 150rpx;
+		
 	}
 	
 	.content {
