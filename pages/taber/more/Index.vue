@@ -1,6 +1,6 @@
 <template>
 	<view class="contents">
-		<canvas style="width: 220px; height: 220px;background:pink;" canvas-id="myQrcode"></canvas>
+		<canvas style="width: 220px; height: 220px;" canvas-id="myQrcode"></canvas>
 	</view>
 </template>
 
@@ -19,8 +19,8 @@
 		methods: {
 			drawQrcodeFun () {
 				drawQrcode({
-				  width: 200,
-				  height: 200,
+				  width: 150,
+				  height: 150,
 				  canvasId: 'myQrcode',
 				  // ctx: wx.createCanvasContext('myQrcode'),
 				  text: 'https://www.baidu.com',
@@ -41,5 +41,11 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	.contents{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: #f0eff5;
+	}
 </style>

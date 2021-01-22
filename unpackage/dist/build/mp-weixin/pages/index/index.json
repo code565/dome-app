@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "uni-nav-bar": "/pages/index/topTab/uni-nav-bar/uni-nav-bar"
+  }
+}

@@ -1,21 +1,21 @@
 <template>
 	<view class="contents">
-		<img src="static/homeImg/moreEnd.png" class="contentsHeaImg" />
+		<img src="/static/homeImg/moreEnd.png" class="contentsHeaImg" />
 		<div class="more">
 			<p class="more-title">瑞祥服务</p>
 			<div class="more-toncent">
 					<div class="more-toncent-dispeo">
 						<navigator url="./more/Index" open-type="navigate">
-						<img src="static/homeImg/more/event.png" />
+						<img src="/static/homeImg/more/event.png" />
 						<span class="more-toncent-woders">我的评价</span>
 						</navigator>
 					</div>
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">帮助中心</span>
 				</div>
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">推荐好友</span>
 				</div>
 			</div>
@@ -24,21 +24,21 @@
 			<p class="more-title">工人服务</p>
 			<div class="more-toncent">
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">店&nbsp;&nbsp;&nbsp;&nbsp;铺</span>
 				</div>
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">排&nbsp;&nbsp;&nbsp;&nbsp;名</span>
 				</div>
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">活&nbsp;&nbsp;&nbsp;&nbsp;动</span>
 				</div>
 			</div>
 			<div class="more-toncent" style="display: block;">
 				<div class="more-toncent-dispeo">
-					<img src="static/homeImg/more/event.png" />
+					<img src="/static/homeImg/more/event.png" />
 					<span class="more-toncent-woders">店&nbsp;&nbsp;&nbsp;&nbsp;铺</span>
 				</div>
 			</div>

@@ -7,11 +7,8 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"app-plus": {
-				    "titleNView": false, //禁用原生导航栏
-					"enablePullDownRefresh": "true",
-					"backgroundTextStyle": "dark" 
-				}
+				"navigationBarBackgroundColor": "#1296db",
+				"navigationBarTextStyle": "white"
 			}
 		},
 		{
@@ -21,30 +18,10 @@
 			}
 		},
 		{
-			"path": "pages/taber/more",
-			"style": {
-				"navigationBarTitleText": "更多",
-				"navigationBarBackgroundColor": "#f3AA36",
-				"navigationBarTextStyle": "white"
-			}
-		},
-		{
-			"path": "pages/taber/find",
-			"style": {
-				"navigationBarTitleText": "发现"
-			}
-		},
-		{
 			"path": "pages/taber/my",
 			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		},
-		{
-			"path": "pages/taber/more/Index",
-			"style": {
-				"navigationBarTitleText": "推荐",
-				"navigationBarBackgroundColor": "#f3AA36",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#1296db",
 				"navigationBarTextStyle": "white"
 			}
 		}
@@ -66,18 +43,6 @@
 				"text": "首页",
 				"iconPath": "static/homeImg/home.png",
 				"selectedIconPath": "static/homeImg/homeActive.png"
-			},
-			{
-				"pagePath": "pages/taber/more",
-				"text": "更多",
-				"iconPath": "static/homeImg/more.png",
-				"selectedIconPath": "static/homeImg/moreActive.png"
-			},
-			{
-				"pagePath": "pages/taber/find",
-				"text": "发现",
-				"iconPath": "static/homeImg/find.png",
-				"selectedIconPath": "static/homeImg/findActive.png"
 			},
 			{
 				"pagePath": "pages/taber/my",

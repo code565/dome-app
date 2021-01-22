@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/details",
+    "pages/taber/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#c0c0c8",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/homeImg/home.png",
+        "selectedIconPath": "static/homeImg/homeActive.png"
+      },
+      {
+        "pagePath": "pages/taber/my",
+        "text": "我的",
+        "iconPath": "static/homeImg/my.png",
+        "selectedIconPath": "static/homeImg/myActive.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap44.json"
+}

@@ -1,47 +1,47 @@
 <template>
 	<view class="content">
-		<uni-nav-bar left-icon="back" left-text="返回" fixed="true" right-text="菜单" title="导航栏组件" @barHeightfn="barHeightfn"></uni-nav-bar>
+		<!-- <uni-nav-bar left-icon="back" left-text="返回" fixed="true" right-text="菜单" title="导航栏组件" @barHeightfn="barHeightfn"></uni-nav-bar> -->
 		<div class="content-val" :style="{'margin-top': barHeightPress + 'px'}">
-			<ul >
-				<li class="order-press lh25" v-for="(item,index) in 20" :key="index">
-					<div class="order-press-img col-md-3 mt10">
-						<img src="https://proj01.oss-cn-beijing.aliyuncs.com/2018/wKgBtFoyLzeAH_SoAAMJedLhuek005.jpg" mode="" ></img>
-					</div>
-					<div class="order-press-content col-md-8">
-						<p class="col-md-12">
-							<span class="pr8">编号：</span>
-							<span>R01-HZ0048-01</span>
-						</p>
-						<p class="col-md-4">
-							<span class="pr8">工期：</span>
-							<span>3</span>
-						</p>
-						<p class="col-md-6">
-							<span class="pr8">金额：</span>
-							<span>8000元</span>
-						</p>
-						<p class="col-md-12">
-							<span class="pr8">地址：</span>
-							<span>北京市海淀区瑞祥装饰永定河路388号</span>
-						</p>
-					</div>
-					<!-- @click="showToast"	 -->
-					<div>
-						<span class="order-press-botton" > 
-							施工
-						</span>
-					</div>
-				</li>
-			</ul>
+			<image src="/static/homeImg/moreEnd.png" class="contentsHeaImg" /></image>
+			
+			<div class="moueHome">
+				<ul class="moueHome-ul">
+					<li>
+						<div class="moueHome-ul-pred">
+							<image src="/static/homeImg/scanAll.png" mode=""></image>
+						</div>
+						<sapn class="moueHome-ul-wordes">
+							扫一扫
+						</sapn>
+					</li>
+					<li>
+						<div class="moueHome-ul-pred">
+							<image src="/static/homeImg/find.png" mode=""></image>
+						</div>
+						<sapn class="moueHome-ul-wordes">
+							扫一扫
+						</sapn>
+					</li>
+					<li>
+						<div class="moueHome-ul-pred">
+							<image src="/static/homeImg/find.png" mode=""></image>
+						</div>
+						<sapn class="moueHome-ul-wordes">
+							扫一扫
+						</sapn>
+					</li>
+				</ul>
+				
+			</div>
+			
 		</div>
 		<u-toast ref="uToast" />
 	</view>
 </template>
 
 <script>
-	import uniNavBar from "./topTab/uni-nav-bar/uni-nav-bar.vue"
 	export default {
-		components: {uniNavBar},
+		components: {},
 		data() {
 			return {
 				title: '6666',
@@ -83,15 +83,44 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	.moueHome{
+		background-color: #fff;
+	}
+	.moueHome-ul-pred {
+		margin: 0 auto;
+	}
+	.contentsHeaImg{
+		width: 100%;
+		height: 350rpx;
+	}
+	.moueHome {
+		width: 100%;
+	}
+	.moueHome-ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.moueHome-ul li {
+		    text-align: center;
+	}
+	.moueHome-ul li image{
+		width: 150rpx;
+		height: 150rpx;
+	}
+	
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-color: #e5e5e5;
 		
 	}
-
+	.moueHome-ul-wordes{
+		font-size: 16px;
+		 font-weight: 600;
+	}
 	.logo {
 		height: 200rpx;
 		width: 200rpx;
@@ -110,7 +139,8 @@
 		font-size: 36rpx;
 		color: #8f8f94;
 	}
-	.content-val { width: 100%; height: 100%;}
+	.content-val { 
+		width: 100%;}
 	
 	.order-press{
 		height: 200rpx;
@@ -137,5 +167,6 @@
 		line-height: 56rpx;
 		top: 50rpx;
 	}
+	
 	
 </style>

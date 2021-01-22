@@ -1,6 +1,6 @@
 {
-    "name" : "工人平台",
-    "appid" : "__UNI__B8AB5C1",
+    "name" : "瑞祥物流",
+    "appid" : "__UNI__8C9A61D",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -91,7 +91,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx09b6ac695d7d94e4",
         "setting" : {
             "urlCheck" : false
         },
