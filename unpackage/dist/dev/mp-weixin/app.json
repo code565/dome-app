@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/home/details",
-    "pages/taber/my"
+    "pages/taber/my",
+    "pages/login/Index",
+    "pages/taber/my/orderDetails/Index"
   ],
   "subPackages": [],
   "window": {
@@ -31,6 +33,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap41.json"
+  "usingComponents": {}
 }

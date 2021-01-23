@@ -10465,81 +10465,95 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _utils = _interopRequireDefault(__webpack_require__(/*! ../static/utils */ 83));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
-var state = {
-  userInfo: {
-    userName: '王磊' } };
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _utils = _interopRequireDefault(__webpack_require__(/*! ../static/utils */ 41));
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 43));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+_vue.default.use(_vuex.default);
+
+var store = new _vuex.default.Store({
+  state: {
+    userInfo: {},
+    updatePlate: {} },
+
+  /**
+                        * getters
+                        */
+  getters: {
+    userInfo: function userInfo(state) {return _utils.default.getLocal('userInfo');},
+    updatePlate: function updatePlate(state) {return state.updatePlate;} },
 
 
-/**
-                         * getters
-                         */
-var getters = {
-  userInfo: state.userInfo };
+  /**
+                                                                             * mutations
+                                                                             */
+  mutations: {
+    SET_USER_INFO: function SET_USER_INFO(state, playload) {
+      if (playload) {
+        _utils.default.setLocal('userInfo', playload);
+        state.userInfo = playload;
+      } else {
+        state.userInfo = _utils.default.getLocal('userInfo') || {};
+      }
+    },
+    SET_UPDATE_PLATE: function SET_UPDATE_PLATE(state) {var playload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      state.updatePlate = _objectSpread({
+        date: new Date().getTime() },
+      playload);
+
+    } } });var _default =
 
 
-/**
-                               * mutations
-                               */
-var mutations = _defineProperty({},
-'SET_USER_INFO'.SET_USER_INFO, function (state, playload) {
-  if (playload) {
-    _utils.default.setLocal('userInfo', playload);
-    state.userInfo = playload;
-  } else {
-    state.userInfo = _utils.default.getLocal('userInfo') || {};
-  }
-});var _default =
 
-
-{
-  state: state,
-  mutations: mutations,
-  getters: getters };exports.default = _default;
+store;exports.default = _default;
 
 /***/ }),
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */
+/* 41 */
+/*!*****************************************************!*\
+  !*** E:/外团代码/物流中心小程序/物流中心小程序/static/utils/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _storage = _interopRequireDefault(__webpack_require__(/*! ./src/storage */ 42));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default = _objectSpread({},
+
+
+_storage.default);exports.default = _default;
+
+/***/ }),
+/* 42 */
+/*!***********************************************************!*\
+  !*** E:/外团代码/物流中心小程序/物流中心小程序/static/utils/src/storage.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var StorageEs = {};
+
+/**
+                                                                                                                         * 设置localStorage
+                                                                                                                         * @param {*} key
+                                                                                                                         * @param {*} val
+                                                                                                                         */
+StorageEs.setLocal = function (key, val) {
+  if (key, val) uni.setStorageSync(key, val);
+};
+
+/**
+    * 获取localStorage
+    * @param {*} key
+    */
+StorageEs.getLocal = function (key) {
+  if (key) return uni.getStorageSync(key);
+  return null;
+};var _default =
+
+StorageEs;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 43 */
 /*!********************************************!*\
   !*** ./node_modules/vuex/dist/vuex.esm.js ***!
   \********************************************/
@@ -11649,51 +11663,6 @@ var index = {
 
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 3)))
-
-/***/ }),
-/* 83 */
-/*!*****************************************************!*\
-  !*** E:/外团代码/物流中心小程序/物流中心小程序/static/utils/index.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _storage = _interopRequireDefault(__webpack_require__(/*! ./src/storage */ 84));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default = _objectSpread({},
-
-
-_storage.default);exports.default = _default;
-
-/***/ }),
-/* 84 */
-/*!***********************************************************!*\
-  !*** E:/外团代码/物流中心小程序/物流中心小程序/static/utils/src/storage.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var StorageEs = {};
-
-/**
-                                                                                                                         * 设置localStorage
-                                                                                                                         * @param {*} key
-                                                                                                                         * @param {*} val
-                                                                                                                         */
-StorageEs.setLocal = function (key, val) {
-  if (key, val) wx.setStorageSync(key, val);
-};
-
-/**
-    * 获取localStorage
-    * @param {*} key
-    */
-StorageEs.getLocal = function (key) {
-  if (key) return wx.getStorageSync(key);
-  return null;
-};var _default =
-
-StorageEs;exports.default = _default;
 
 /***/ })
 ]]);

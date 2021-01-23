@@ -6,7 +6,7 @@ let StorageEs = {}
  * @param {*} val
  */
 StorageEs.setLocal = function (key, val) {
-	if (key, val) wx.setStorageSync(key, val)
+	if (key, val) uni.setStorageSync(key, val)
 }
 
 /**
@@ -14,7 +14,7 @@ StorageEs.setLocal = function (key, val) {
  * @param {*} key
  */
 StorageEs.getLocal = function (key) {
-    if (key) return wx.getStorageSync(key)
+    if (key) return uni.getStorageSync(key)
     return null
 }
 

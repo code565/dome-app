@@ -1,10 +1,18 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			// true 或者 null
+			if (!uni.getStorageSync('userInfo')) {
+				uni.redirectTo({
+					url:'/pages/login/Index'
+				})
+			}
+		},
+		onLoad: function() {
+			console.log('App onLoad')
 		},
 		onShow: function() {
-			console.log('App Show')
+			
 		},
 		onHide: function() {
 			console.log('App Hide')

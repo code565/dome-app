@@ -24,6 +24,27 @@
 				"navigationBarBackgroundColor": "#1296db",
 				"navigationBarTextStyle": "white"
 			}
+		},
+		{
+			"path": "pages/login/Index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#1296db",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"titleNView":{  
+					    "autoBackButton":false  
+					}  
+				}
+			}
+		},
+		{
+			"path": "pages/taber/my/orderDetails/Index",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#1296db",
+				"navigationBarTextStyle": "white"
+			}
 		}
 	],
 	"globalStyle": {

@@ -1,0 +1,84 @@
+
+.grid-text.data-v-2ca364d2 {
+			font-size: 28rpx;
+			margin-top: 4rpx;
+			color: $u-type-info;
+}
+.head.data-v-2ca364d2 {
+	  width: 100%;
+	  height: 300rpx;
+}
+.userinfo.data-v-2ca364d2 {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: row;
+	          flex-direction: row;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+	          align-items: center;
+	  width: 100%;
+	  position: fixed;
+	  background-color: #1296db;
+	  height: 300rpx;
+}
+.userinfo-avatar.data-v-2ca364d2 {
+	  width: 150rpx;
+	  height: 150rpx;
+	  margin: 30rpx;
+	  -webkit-border-radius: 50%;
+	          border-radius: 50%;
+}
+.userinfo-nickname.data-v-2ca364d2 {
+	  color: #333333;
+	  font-size: 42rpx;
+}
+.list-wrapper.data-v-2ca364d2 {
+  width: 100%;
+}
+	/* 横着的分割View样式 */
+	/*分割线样式*/
+.div-line.data-v-2ca364d2{
+  background: #E0E3DA;
+  width: 100%;
+  height: 3rpx;
+}
+.list-item.data-v-2ca364d2 {
+  width: 100%;
+  height: 120rpx;
+}
+.list-item_active.data-v-2ca364d2 {
+  background-color: #E0E3DA;
+}
+.item.data-v-2ca364d2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 120rpx;
+}
+.item-text.data-v-2ca364d2 {
+  position: fixed;
+  left: 100rpx;
+  font-size: 38rpx;
+}
+.item-array.data-v-2ca364d2 {
+  position: fixed;
+  right: 50rpx;
+  font-size: 38rpx;
+}
+.item-image.data-v-2ca364d2 {
+  position: fixed;
+  left: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+

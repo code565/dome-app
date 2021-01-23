@@ -2,5 +2,11 @@
   "navigationBarTitleText": "我的",
   "navigationBarBackgroundColor": "#1296db",
   "navigationBarTextStyle": "white",
-  "usingComponents": {}
+  "usingComponents": {
+    "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-grid": "/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/uview-ui/components/u-grid-item/u-grid-item",
+    "u-badge": "/uview-ui/components/u-badge/u-badge",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
 }
